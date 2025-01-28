@@ -19,3 +19,4 @@ docker run -p 8000:8000 django-app
 🚧 Challenges I Faced (and Solved!):
 TemplateDoesNotExist:
  My app initially couldn’t locate the homepage/index.html. After debugging, I realized the TEMPLATES_DIR in settings.py wasn’t pointing to the correct path inside the container. The fix? I verified that the templates folder was correctly located in /app/templates (where it was copied during the Docker build).
+![Screenshot 2025-01-28 144335](https://github.com/user-attachments/assets/848c998e-d9b7-4681-9a8a-a5e0c579512a)
